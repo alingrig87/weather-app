@@ -7,26 +7,23 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div>
-			<img src="mockup.png" width="900px" alt="" />
-		</div>
 		<div id="container">
 			<div class="navbar"><h2>Weather Dashboard</h2></div>
 			<div class="content">
 				<div class="main-content">
 					<form>
 						<label for="city-input">Enter a City Name</label>
-						<input
-							type="text"
-							placeholder="E.g. New York, London, Tokyo"
-							value="Urziceni"
-						/>
-						<button>Search</button>
+						<input type="text" placeholder="E.g. New York, London, Tokyo" />
+						<button class="search-btn">Search</button>
+						<button class="forecast-btn">Forecast</button>
 					</form>
-					<div class="weather"></div>
+					<div class="weather-container">
+						Weather information will be displayed here, please input a valid
+						city a click on "Search" button
+					</div>
 				</div>
 
-				<div class="forecast"></div>
+				<div class="forecast-container"></div>
 			</div>
 		</div>
 		<script type="module" src="app.js"></script>
